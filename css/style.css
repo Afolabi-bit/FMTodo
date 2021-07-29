@@ -80,6 +80,7 @@ button {
   height: 100%;
   margin: 0 auto;
   padding: 70px 0 30px;
+  overflow-x: hidden;
 }
 
 header {
@@ -379,7 +380,7 @@ form span {
     display: block;
     object-fit: contain;
     width: 100%;
-    height: 30vh;
+    height: 37vh;
     object-fit: cover;
     background-position: center;
   }
@@ -399,5 +400,29 @@ form span {
 
   form {
     margin-bottom: 20px;
+  }
+
+  form input {
+    font-size: 14px;
+  }
+
+  .todo p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .filter {
+    justify-content: center;
+  }
+
+  .tracker {
+    display: none;
+  }
+
+  .clear {
+    display: none;
+  }
+
+  .btns button {
+    padding: 0 12px;
   }
 }
