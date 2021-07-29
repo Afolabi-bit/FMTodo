@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="img-bg">
+      <img src="./images/bg-desktop-dark.jpg" alt="#" class="desktop dark-bg" />
+      <img
+        src="./images/bg-desktop-light.jpg"
+        alt="#"
+        class="desktop light-bg"
+      />
+      <img src="./images/bg-mobile-dark.jpg" alt="" class="mobile dark-bg" />
+      <img src="./images/bg-mobile-light.jpg" alt="" class="mobile light-bg" />
+    </div>
+    <div class="container">
+      <header>
+        <h1 class="text">todo</h1>
+        <button id="theme-toggle" class="theme-toggle">
+          <img src="./images/icon-sun.svg" alt="#" class="sun" />
+          <img src="./images/icon-moon.svg" alt="#" class="moon" />
+        </button>
+      </header>
+
+      <main>
+        <form id="form">
+          <span></span>
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Create a new todo..."
+          />
+        </form>
+
+        <div class="todos">
+          <div id="todos-wrapper"></div>
+          <div class="filter">
+            <div>
+              <p class="tracker"><span id="tracker"></span> items left</p>
+            </div>
+            <div id="filter" class="btns">
+              <button class="all active">all</button>
+              <button class="in-progress">active</button>
+              <button class="done">completed</button>
+            </div>
+            <button id="clear" class="clear">clear completed</button>
+          </div>
+        </div>
+        <p class="dir">Drag and drop to reorder list</p>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://github.com/JosephAfolabi">Fola</a>.
+        </p>
+      </main>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
